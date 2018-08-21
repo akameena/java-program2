@@ -1,0 +1,41 @@
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+
+public class SEtDemo {
+	
+	public static void main(String[] args) {
+		HashSet<String> hashSet= new HashSet<String>();
+		hashSet.add("Hi");
+		hashSet.add("Hello");
+		hashSet.add("java");
+		hashSet.add("Hi");
+		hashSet.add("ducat");
+		System.out.println("Hash Set: "+hashSet);
+		
+		TreeSet<String> hashSet2= new TreeSet<String>();
+		hashSet2.add("Hi");
+		hashSet2.add("Hello");
+		hashSet2.add("java");
+		hashSet2.add("Hi");
+		hashSet2.add("ducat");
+		System.out.println("TreeSet: "+hashSet2);
+		
+		LinkedHashSet<String> hashSet3= new LinkedHashSet<>();
+		hashSet3.add("Hi");
+		hashSet3.add("Hello");
+		hashSet3.add("java");
+		hashSet3.add("Hi");
+		hashSet3.add("ducat");
+		System.out.println("LHS: "+hashSet3);
+		
+		Set<String> set= new TreeSet<String>(hashSet);
+		for (String string : set) {
+			System.out.println(string);
+		}
+		
+	}
+
+}

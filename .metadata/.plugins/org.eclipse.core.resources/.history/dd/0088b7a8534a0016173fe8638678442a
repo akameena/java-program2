@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+
+public class ArrayListandLinkedListDiff {
+public static void main(String[] args) {
+	ArrayList<Integer> arrayList=
+			new ArrayList<Integer>();
+	LinkedList<Integer> linkedList=
+			new LinkedList<Integer>();
+	long currentTime= System.currentTimeMillis();
+	for (int i = 0; i < 100000; i++) {
+		arrayList.add(0, i);
+	}
+	long updatedTime= System.currentTimeMillis();
+	long time= updatedTime- currentTime;
+	System.out.println("Time taken by array list to add data: "+time);
+
+	long currentTime1= System.currentTimeMillis();
+	for (int i = 0; i < 100000; i++) {
+		linkedList.add(0, i);
+	}
+	long updatedTime1= System.currentTimeMillis();
+	long time1= updatedTime1- currentTime1;
+	System.out.println("Time taken by array list to add data: "+time1);
+
+	
+	
+	
+}
+}

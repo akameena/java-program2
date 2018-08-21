@@ -1,0 +1,8 @@
+
+public class MySQLConnectivity {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

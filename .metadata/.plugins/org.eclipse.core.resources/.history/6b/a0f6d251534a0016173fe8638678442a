@@ -1,0 +1,15 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+
+public class ArrayListandLinkedListDiff {
+public static void main(String[] args) {
+	ArrayList<Integer> arrayList=
+			new ArrayList<Integer>();
+	LinkedList<Integer> linkedList=
+			new LinkedList<Integer>();
+	for (int i = 0; i < 1E5; i++) {
+		arrayList.add(0, i);
+	}
+}
+}
